@@ -5,6 +5,7 @@
   --bg-body: hsl(0deg, 0%, 100%);
   --font-color-primary: hsl(230deg, 17%, 14%);
   --font-color-primary-secondary: hsl(228deg, 12%, 44%);
+  --status-red: hsl(356deg, 69%, 56%);
 }
 
 body.active{
@@ -127,19 +128,34 @@ main .dashboard .socials .social:nth-child(3) {
 main .dashboard .socials .social:nth-child(4) {
   border-color: hsl(348deg, 97%, 39%);
 }
-main .status {
-  font-size: 14px;
-  color: var(--font-color-primary);
+main .status, .overviews .status {
+  font-size: 14px ;
+  color: hsl(163, 72%, 41%) !important;
 }
-main .status::before {
+main .socials .status::before, .overviews .status::before {
   content: "";
   width: 7px;
-  height: 5px;
+  height: 4px;
   margin-right: 5px;
   margin-bottom: 2px;
   display: inline-block;
   background: url(images/icon-up.svg);
 }
+
+main .socials .youtube .status {
+  color: var(--status-red);
+}
+
+main .socials .youtube .status::before {
+  content: "";
+  width: 7px;
+  height: 4px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  display: inline-block;
+  background: url(images/icon-down.svg);
+}
+
 main .overview {
   margin-top: 2rem;
 }
@@ -177,6 +193,20 @@ main .overview .overviews .result-overview img, main .overview .overviews .resul
 main .overview .overviews .result-overview:hover {
   opacity: 0.8;
   transition: 0.3s;
+}
+
+.result-overview:nth-child(2) .status, .result-overview:nth-child(7) .status, .result-overview:last-child .status{
+  color: var(--status-red) !important;
+}
+
+.result-overview:nth-child(2) .status::before, .result-overview:nth-child(7) .status::before, .result-overview:nth-child(8) .status::before{
+  content: "";
+  width: 7px;
+  height: 4px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  display: inline-block;
+  background: url(images/icon-down.svg);
 }
 
 @media (max-width: 992px) {
