@@ -1,0 +1,70 @@
+.plans{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    .plan{
+        border: 2px solid hsl(240, 4%, 91%);
+        border-radius: 5px;
+        padding: 1.1rem;
+
+        .plan-description{
+            margin-top: 3rem;
+            margin-right: 1rem;
+
+            .title{
+                font-size: 16px;
+                margin-top: 2rem;
+                margin-bottom: 2px;
+            }
+
+            .subtitle{
+                margin-bottom: 2px;
+            }
+
+            small{
+                color: $m-blue;
+            }
+        }
+    }
+
+    .plan.active{
+        background-color: $alabaster;
+        border-color: $p-blue;
+    }
+}
+
+.type-plan{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px;
+    background-color: $alabaster;
+    margin-top: 2rem;
+    align-items: center;
+
+    .type-option{
+        background-color: $m-blue;
+        width: 60px;
+        border-radius: 50px;
+        padding: 5px;
+
+        span{
+            background-color: $white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: block;
+        }
+    }
+
+    span{
+        font-size: 14px;
+        font-weight: 500;
+        color: $gray;
+    }
+
+    span.active{
+        color: $m-blue;
+    }
+}

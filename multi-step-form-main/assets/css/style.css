@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.title {
+  color: hsl(213deg, 96%, 18%);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: hsl(231deg, 11%, 63%);
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: hsl(213deg, 96%, 18%);
+  color: #FFF;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  opacity: 1;
+  float: right;
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-back {
+  color: hsl(231deg, 11%, 63%);
+  background: none;
+  border: none;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+body {
+  background-color: hsl(240deg, 5%, 96%);
+}
+
+.form-step {
+  display: flex;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 810px;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 6px 10px 18px -7px rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+}
+.form-step .sidebar {
+  background-image: url(../../../public/images/bg-sidebar-desktop.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 210px;
+  padding: 1rem;
+  height: 430px;
+  border-radius: 5px;
+}
+.form-step .sidebar .step {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.form-step .sidebar .step .number-step {
+  border-radius: 50%;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  padding: 5px 10px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 16px;
+}
+.form-step .sidebar .step .number-step.active {
+  background-color: hsl(206deg, 94%, 87%);
+  color: #000;
+}
+.form-step .sidebar .step .step-description {
+  text-transform: uppercase;
+}
+.form-step .sidebar .step .step-description .title-step {
+  font-size: 12px;
+  color: hsl(231deg, 11%, 63%);
+}
+.form-step .sidebar .step .step-description .text-step {
+  font-size: 15px;
+  color: hsl(0deg, 0%, 100%);
+}
+.form-step .info {
+  padding: 24px 60px;
+}
+.form-step .info .form {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.inputs {
+  margin-top: 1rem;
+}
+.inputs label {
+  font-size: 14px;
+  color: hsl(213deg, 96%, 18%);
+}
+.inputs input {
+  margin-top: 5px;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid hsl(231deg, 11%, 63%);
+}
+
+.span-required {
+  color: hsl(354deg, 84%, 57%);
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.plans .plan {
+  border: 2px solid hsl(240deg, 4%, 91%);
+  border-radius: 5px;
+  padding: 1.1rem;
+}
+.plans .plan .plan-description {
+  margin-top: 3rem;
+  margin-right: 1rem;
+}
+.plans .plan .plan-description .title {
+  font-size: 16px;
+  margin-top: 2rem;
+  margin-bottom: 2px;
+}
+.plans .plan .plan-description .subtitle {
+  margin-bottom: 2px;
+}
+.plans .plan .plan-description small {
+  color: hsl(213deg, 96%, 18%);
+}
+.plans .plan.active {
+  background-color: hsl(231deg, 100%, 99%);
+  border-color: hsl(243deg, 100%, 62%);
+}
+
+.type-plan {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 10px;
+  background-color: hsl(231deg, 100%, 99%);
+  margin-top: 2rem;
+  align-items: center;
+}
+.type-plan .type-option {
+  background-color: hsl(213deg, 96%, 18%);
+  width: 60px;
+  border-radius: 50px;
+  padding: 5px;
+}
+.type-plan .type-option span {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+}
+.type-plan span {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(231deg, 11%, 63%);
+}
+.type-plan span.active {
+  color: hsl(213deg, 96%, 18%);
+}
+
+.add-ons label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  border: 1px solid hsl(240deg, 4%, 91%);
+  padding: 1rem;
+  border-radius: 10px;
+  gap: 100px;
+}
+.add-ons label .ons-marcation {
+  display: flex;
+  gap: 20px;
+}
+.add-ons label .ons-marcation .title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.add-ons label .on-price {
+  color: hsl(243deg, 100%, 62%);
+}
+
+.add-ons label.active {
+  background-color: hsl(231deg, 100%, 99%);
+  border-color: hsl(243deg, 100%, 62%);
+}
+
+.result-price {
+  background-color: hsl(231deg, 100%, 99%);
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  width: 448px;
+}
+.result-price .result-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  padding: 0 0 1rem 0;
+  margin-bottom: 10px;
+}
+.result-price .result-product .title {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.result-price .result-product .btn-back {
+  text-decoration: underline;
+}
+.result-price .result-product .price {
+  color: hsl(213deg, 96%, 18%);
+  font-weight: bold;
+}
+.result-price .result-add-ons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.result-price .result-add-ons .price {
+  color: hsl(213deg, 96%, 18%);
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 1rem;
+}
+.total-price .subtitle {
+  font-size: 16px;
+  font-weight: lighter;
+}
+.total-price .price {
+  color: hsl(243deg, 100%, 62%);
+  font-weight: bold;
+}
+
+/* THANK YOU */
+.thank-you .info {
+  text-align: center;
+  width: 567px;
+  align-items: center;
+  margin: auto;
+}

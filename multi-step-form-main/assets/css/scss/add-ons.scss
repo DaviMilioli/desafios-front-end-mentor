@@ -1,0 +1,31 @@
+.add-ons label{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    border: 1px solid hsl(240, 4%, 91%);
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 100px;
+    
+    .ons-marcation{
+        display: flex;
+        gap: 20px;
+
+        .title{
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+    }
+
+    .on-price{
+        color: $p-blue;
+    }
+    
+}
+
+.add-ons label.active{
+    background-color: $alabaster;
+    border-color: $p-blue;
+}

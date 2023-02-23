@@ -1,0 +1,21 @@
+.inputs{
+    margin-top: 1rem;
+
+    label{
+        font-size: 14px;
+        color: hsl(213, 96%, 18%);
+    }
+    
+    input{
+        margin-top: 5px;
+        width: 100%;
+        padding: 0.7rem;
+        border-radius: 8px;
+        border: 1px solid $gray;
+    }
+
+}
+
+.span-required{
+    color: hsl(354, 84%, 57%);
+}
